@@ -28,7 +28,7 @@ function a_star_impl!(
 
         for edge in out_edges(graph, u)
 
-            v = edge.dst
+            v = dst(edge)
             if colormap[v] < 2
                 if use_dists
                     edist = edge_dists[src(edge), dst(edge)]

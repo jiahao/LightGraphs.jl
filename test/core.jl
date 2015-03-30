@@ -1,5 +1,5 @@
-@test e1.src == src(e1) == 1
-@test e1.dst == dst(e1) == 2
+@test e1.first == src(e1) == 1
+@test e1.second == dst(e1) == 2
 
 g = Graph(5)
 add_edge!(g, 1, 2)

@@ -43,7 +43,7 @@ function reverse!(g::DiGraph)
         push!(reve, rev(e))
     end
     g.edges = reve
-    g.finclist, g.binclist = g.binclist, g.finclist
+    g.fadjlist, g.badjlist = g.badjlist, g.fadjlist
     return g
 end
 
